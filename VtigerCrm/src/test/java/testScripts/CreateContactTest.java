@@ -7,18 +7,18 @@ import pomPages.HomePageClass;
 import pomPages.LoginClass;
 
 public class CreateContactTest extends BaseTest{
-	HomePageClass hp=new HomePageClass(driver);
 	@Test
 	public void contactWithLastName() throws Exception {
-		String username = flib.getDataFromExcelSheet(EXCELPATH, LOGINSHEET, 1,0);
-		String password = flib.getDataFromExcelSheet(EXCELPATH, LOGINSHEET, 1, 1);
+//		String username = flib.getDataFromExcelSheet(EXCELPATH, LOGINSHEET, 1,0);
+//		String password = flib.getDataFromExcelSheet(EXCELPATH, LOGINSHEET, 1, 1);
 		
 		//login
-		LoginClass lp=new LoginClass(driver);
-		lp.loginVtiger(username, password);
+//		LoginClass lp=new LoginClass(driver);
+//		lp.loginVtiger(username, password);
 		
 		//organisation link
 		
+		Thread.sleep(1000);
 		hp.contactPageLink();
 		
 		ContactClass cc=new ContactClass(driver);

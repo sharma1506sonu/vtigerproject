@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -26,7 +25,7 @@ public class BaseTest implements IAutoConstant {
 	public WebDriver driver;
 	public FileLib flib = new FileLib();
 	public HomePageClass hp = new HomePageClass(driver);
-	
+
 	
 
 	@BeforeSuite
@@ -73,9 +72,9 @@ public class BaseTest implements IAutoConstant {
 
 	@AfterMethod
 	public void signout() {
-		LogoutClass ls = new LogoutClass(driver);
-		ls.signOut();
-		Reporter.log("Logout successfully", true);
+//		LogoutClass ls = new LogoutClass(driver);
+//		ls.signOut();
+//		Reporter.log("Logout successfully", true);
 	}
 
 	@AfterClass

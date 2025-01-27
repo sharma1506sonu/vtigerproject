@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.CreateOrgTest">
+      <class name="testScripts.CreateContactTest">
         <methods>
           <include name="toConnectServer"/>
           <include name="toCloseServer"/>
+          <include name="contactWithLastName"/>
           <include name="login"/>
           <include name="toConnectDatabase"/>
           <include name="signout"/>
           <include name="tearDown"/>
           <include name="toCloseDatabase"/>
-          <include name="createOrgTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testScripts.CreateOrgTest -->
+      </class> <!-- testScripts.CreateContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

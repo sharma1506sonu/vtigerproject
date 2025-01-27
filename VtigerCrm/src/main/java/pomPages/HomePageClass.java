@@ -12,14 +12,14 @@ public class HomePageClass {
 	}
 
 	@FindBy(linkText = "Organizations")
-	private WebElement organizationpageLink;
+	public WebElement organizationpageLink;
 
 	public WebElement getOrganizationPageLink() {
 		return getOrganizationPageLink();
 	}
 
 	@FindBy(linkText = "Contacts")
-	private WebElement contactPageLink;
+	public WebElement contactPageLink;
 
 	public WebElement getContactPageLink() {
 		return contactPageLink;
