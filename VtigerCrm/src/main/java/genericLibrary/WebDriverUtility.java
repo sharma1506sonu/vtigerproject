@@ -20,9 +20,9 @@ package genericLibrary;
 			this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 			this.act = new Actions(driver);
 		}
-		/**
-		 * This method is used to maximize screen.
-		 */
+		
+		 // This method is used to maximize screen.
+		 
 		public void maximize() {
 			driver.manage().window().maximize();
 		}
@@ -110,8 +110,8 @@ package genericLibrary;
 			Set<String> winIDs = driver.getWindowHandles();
 			for (String x : winIDs) {
 				driver.switchTo().window(x);
-				if(driver.getTitle().contains(partialTitle));
-					break;
+				if(driver.getCurrentUrl().contains(partialTitle));
+				     break;
 			}
 
 		}

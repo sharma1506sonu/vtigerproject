@@ -7,11 +7,11 @@
         <methods>
           <include name="toConnectServer"/>
           <include name="toCloseServer"/>
-          <include name="contactWithLastName"/>
           <include name="login"/>
           <include name="toConnectDatabase"/>
           <include name="signout"/>
           <include name="tearDown"/>
+          <include name="contactWithLastNameOrgName"/>
           <include name="toCloseDatabase"/>
           <include name="setUp"/>
         </methods>

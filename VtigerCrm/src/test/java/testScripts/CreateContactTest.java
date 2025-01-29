@@ -4,22 +4,14 @@ import org.testng.annotations.Test;
 import genericLibrary.BaseTest;
 import pomPages.ContactClass;
 import pomPages.HomePageClass;
-import pomPages.LoginClass;
 
 public class CreateContactTest extends BaseTest{
 	@Test
 	public void contactWithLastName() throws Exception {
-//		String username = flib.getDataFromExcelSheet(EXCELPATH, LOGINSHEET, 1,0);
-//		String password = flib.getDataFromExcelSheet(EXCELPATH, LOGINSHEET, 1, 1);
 		
-		//login
-//		LoginClass lp=new LoginClass(driver);
-//		lp.loginVtiger(username, password);
-		
-		//organisation link
-		
-		Thread.sleep(1000);
-		hp.contactPageLink();
+		// organization link
+		HomePageClass hp = new HomePageClass(driver);
+		hp.clickContactPageLink();
 		
 		ContactClass cc=new ContactClass(driver);
 		String lastName=flib.getDataFromExcelSheet(CONTACTEXCEL,LASTNAME, 1,0);
@@ -33,7 +25,8 @@ public class CreateContactTest extends BaseTest{
 		String orgName = flib.getDataFromExcelSheet(EXCELPATH, ORGSHEET, 1,0);
 
 		//organisation link
-		hp.contactPageLink();
+		HomePageClass hp = new HomePageClass(driver);
+		hp.clickContactPageLink();
 		
 		ContactClass cc=new ContactClass(driver);
 		cc.createCoantactLastNameOrgName(lastName,orgName);
@@ -44,7 +37,8 @@ public class CreateContactTest extends BaseTest{
 	public void contactWithStartEndDate() throws Exception {
 		
 		//organisation link
-		hp.contactPageLink();
+		HomePageClass hp = new HomePageClass(driver);
+		hp.clickContactPageLink();
 		
 		ContactClass cc=new ContactClass(driver);
 		String lastName=flib.getDataFromExcelSheet(CONTACTEXCEL,LASTNAME, 1,0);

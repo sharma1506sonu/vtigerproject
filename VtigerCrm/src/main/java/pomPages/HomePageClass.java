@@ -3,12 +3,12 @@ package pomPages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class HomePageClass {
+public class HomePageClass extends BaseClass {
 
 	public HomePageClass(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+		super(driver);
+		// TODO Auto-generated constructor stub
 	}
 
 	@FindBy(linkText = "Organizations")
@@ -30,7 +30,7 @@ public class HomePageClass {
 		organizationpageLink.click();
 	}
 
-	public void contactPageLink() {
+	public void clickContactPageLink() {
 		contactPageLink.click();
 	}
 

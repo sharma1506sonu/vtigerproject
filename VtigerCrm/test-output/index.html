@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\vivek\AppData\Local\Temp\testng-eclipse--167953907\testng-customsuite.xml</span>
+                    <span>C:\Users\vivek\AppData\Local\Temp\testng-eclipse-1510165026\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testScripts.CreateContactTest" class="method navigator-link" hash-for-method="contactWithLastName">contactWithLastName</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScripts.CreateContactTest" class="method navigator-link" hash-for-method="contactWithLastNameOrgName">contactWithLastNameOrgName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,15 +126,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="contactWithLastName">
-                  </a> <!-- contactWithLastName -->
-                  <span class="method-name">contactWithLastName</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at pomPages.HomePageClass.contactPageLink(HomePageClass.java:34)
-	at testScripts.CreateContactTest.contactWithLastName(CreateContactTest.java:22)
+                  <a name="contactWithLastNameOrgName">
+                  </a> <!-- contactWithLastNameOrgName -->
+                  <span class="method-name">contactWithLastNameOrgName</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:64)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:60)
+	at genericLibrary.WebDriverUtility.&lt;init&gt;(WebDriverUtility.java:21)
+	at pomPages.ContactClass.createCoantactLastNameOrgName(ContactClass.java:48)
+	at testScripts.CreateContactTest.contactWithLastNameOrgName(CreateContactTest.java:32)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -170,7 +171,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vivek\AppData\Local\Temp\testng-eclipse--167953907\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vivek\AppData\Local\Temp\testng-eclipse-1510165026\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,7 +182,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testScripts.CreateContactTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;contactWithLastName&quot;/&gt;
+          &lt;include name=&quot;contactWithLastNameOrgName&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testScripts.CreateContactTest --&gt;
     &lt;/classes&gt;
@@ -225,14 +226,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'contactWithLastName')
+data.setCell(0, 1, 'contactWithLastNameOrgName')
 data.setCell(0, 2, 'testScripts.CreateContactTest')
-data.setCell(0, 3, 1018);
+data.setCell(0, 3, 10217);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,9 +254,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testScripts.CreateContactTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">contactWithStartEndDate</span>
+                <span class="ignored-method-name">contactWithLastName</span>
                 <br/>
-                <span class="ignored-method-name">contactWithLastNameOrgName</span>
+                <span class="ignored-method-name">contactWithStartEndDate</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -274,37 +275,37 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">toConnectDatabase</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">3044 ms</span>
+                <span class="method-start">3385 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">contactWithLastName</span>
-                <span class="method-start">6972 ms</span>
+                <span class="method-name">contactWithLastNameOrgName</span>
+                <span class="method-start">9099 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">signout</span>
-                <span class="method-start">8001 ms</span>
+                <span class="method-start">19326 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8005 ms</span>
+                <span class="method-start">19330 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">toCloseDatabase</span>
-                <span class="method-start">8232 ms</span>
+                <span class="method-start">19677 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">toCloseServer</span>
-                <span class="method-start">8280 ms</span>
+                <span class="method-start">19765 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -16,16 +16,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-
-import pomPages.HomePageClass;
 import pomPages.LoginClass;
-import pomPages.LogoutClass;
+
 
 public class BaseTest implements IAutoConstant {
 	public WebDriver driver;
 	public FileLib flib = new FileLib();
-	public HomePageClass hp = new HomePageClass(driver);
-
 	
 
 	@BeforeSuite

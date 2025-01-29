@@ -1,8 +1,8 @@
 package testScripts;
 
 import org.testng.annotations.Test;
-
 import genericLibrary.BaseTest;
+import pomPages.HomePageClass;
 import pomPages.OrganisationClass;
 
 public class CreateOrgTest extends BaseTest{
@@ -10,6 +10,7 @@ public class CreateOrgTest extends BaseTest{
 	public void createOrgTest() throws Exception {
 		
 		//organisation link
+		HomePageClass hp = new HomePageClass(driver);
 		hp.orgPageLink();
 		
 		//create Org
@@ -22,6 +23,7 @@ public class CreateOrgTest extends BaseTest{
 	@Test
 	public void createOrgWithIndustry() throws Exception {
 		//organisation link
+		HomePageClass hp = new HomePageClass(driver);
 		hp.orgPageLink();
 		
 		//create OrgWith Industry
@@ -36,6 +38,7 @@ public class CreateOrgTest extends BaseTest{
 	@Test
 	public void createOrgIndustryWithPhone() throws Exception {
 		//organisation link
+		HomePageClass hp = new HomePageClass(driver);
 		hp.orgPageLink();
 	
 		//create OrgWith Industry

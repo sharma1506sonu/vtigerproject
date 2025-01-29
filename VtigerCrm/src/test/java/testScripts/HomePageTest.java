@@ -12,7 +12,7 @@ public void homePageTest() throws Exception {
 	
 	HomePageClass hp=new HomePageClass(driver);
 	hp.orgPageLink();
-	hp.contactPageLink();
+	hp.clickContactPageLink();
 
 }
 }

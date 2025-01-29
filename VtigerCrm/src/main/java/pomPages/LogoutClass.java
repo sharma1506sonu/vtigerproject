@@ -4,14 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class LogoutClass {
-	WebDriver driver;
-	public  LogoutClass(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+public class LogoutClass extends BaseClass {
+	public LogoutClass(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
 	}
-	
+
+	WebDriver driver;	
 	@FindBy (xpath="//img[@src='themes/softed/images/user.PNG']")
 	private WebElement signoutArea;
 	
