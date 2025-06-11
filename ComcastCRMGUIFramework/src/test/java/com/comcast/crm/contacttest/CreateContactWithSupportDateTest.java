@@ -12,12 +12,11 @@ import org.testng.annotations.Test;
 import com.comcast.crm.basetest.BaseClass;
 import com.comcast.crm.generic.fileutility.ExcelUtility;
 import com.comcast.crm.genericwebdriverutility.JavaUtility;
-import com.comcast.crm.listenerutility.ListenerImplementationClass;
 import com.comcast.crm.objectrepositoryutility.ContactPage;
 import com.comcast.crm.objectrepositoryutility.CreatingNewContactPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 
-@Listeners(ListenerImplementationClass.class)
+@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateContactWithSupportDateTest extends BaseClass {
 	@Test
 public static void createContactWithSupportDateTest() throws IOException {
@@ -39,7 +38,7 @@ public static void createContactWithSupportDateTest() throws IOException {
 		    
 		    //verify Header lastname into expected result
 		    String actualLastName = sdriver.findElement(By.id("dtlview_Last Name")).getText();
-		    Assert.assertEquals(true, actualLastName.equals(LastName));
+		    Assert.assertEquals(actualLastName, LastName);
 			/*
 			 * if(actualLastName.equals(LastName)) { System.out.println(LastName+
 			 * " contact is created==PASS"); } else { System.out.println(LastName+
@@ -48,7 +47,8 @@ public static void createContactWithSupportDateTest() throws IOException {
 		    
 		    //verify start date and end date
 		    String startD = sdriver.findElement(By.id("dtlview_Support Start Date")).getText();
-		    Assert.assertEquals(true, startDate.equals(startD));
+		    Assert.assertEquals(startDate,startD);
+		    //System.out.println("start "+ startD);
 		    
 			/*
 			 * if(startDate.equals(startD)) { System.out.println(startDate+
@@ -57,8 +57,8 @@ public static void createContactWithSupportDateTest() throws IOException {
 			 */
 		    
 		    String endD = sdriver.findElement(By.id("dtlview_Support End Date")).getText();
-		    Assert.assertEquals(true, endDate.equals(endD));
-		    
+		    Assert.assertEquals(endDate,endD);
+		   // System.out.println("end "+ endD);
 			/*
 			 * if(endDate.equals(endD)) { System.out.println(endDate+ " is verified==PASS");
 			 * } else { System.out.println(endDate+ " is not verified==FAIL"); }

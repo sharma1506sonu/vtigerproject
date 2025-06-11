@@ -15,16 +15,17 @@ public int getRandomNmber() {
 
 public String getSystemDate() {
 	Date dateObj=new Date();
-	SimpleDateFormat sdf=new SimpleDateFormat("YYYY-MM-DD");
+	SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
 	String date = sdf.format(dateObj);
 	return date;
 }
 public String getRequiredDate(int days) {
 	
-	SimpleDateFormat sim=new SimpleDateFormat("YYYY-MM-DD");
-	Calendar cal = sim.getCalendar();
-	cal.add(Calendar.DAY_OF_MONTH, 30);
+	SimpleDateFormat sim=new SimpleDateFormat("yyyy-MM-dd");
+	Calendar cal =Calendar.getInstance();
+	cal.add(Calendar.DAY_OF_MONTH, days);
 	String endDate = sim.format(cal.getTime());
 	return endDate;
 }
+
 }

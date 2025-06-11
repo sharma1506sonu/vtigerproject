@@ -12,12 +12,11 @@ import com.comcast.crm.basetest.BaseClass;
 import com.comcast.crm.generic.fileutility.ExcelUtility;
 
 import com.comcast.crm.genericwebdriverutility.JavaUtility;
-import com.comcast.crm.listenerutility.ListenerImplementationClass;
 import com.comcast.crm.objectrepositoryutility.CreatingNewOrganizationPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.OrganizationPage;
 
-@Listeners(ListenerImplementationClass.class)
+@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateOrgWithIndustryTest extends BaseClass {
 	@Test ( groups= "smokeTest")
 	public  void createOrgWithIndustryTest() throws IOException {

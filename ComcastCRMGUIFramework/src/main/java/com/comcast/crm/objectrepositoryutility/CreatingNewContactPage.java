@@ -83,9 +83,9 @@ public class CreatingNewContactPage extends WebDriverUtility{
 
 	public void createNewContactWithSupportDate(String lastName,String startDate, String EndDate) {
 		lastNameEdt.sendKeys(lastName);
-		//supportStartDateTextField.clear();
+		supportStartDateTextField.clear();
 		supportStartDateTextField.sendKeys(startDate);
-		//supportEndDateTextField.clear();
+		supportEndDateTextField.clear();
 		supportEndDateTextField.sendKeys(EndDate);
 		saveBtn.click();
 	}

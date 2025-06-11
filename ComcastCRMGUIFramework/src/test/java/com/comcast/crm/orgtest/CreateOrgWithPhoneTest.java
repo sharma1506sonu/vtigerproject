@@ -3,6 +3,7 @@ package com.comcast.crm.orgtest;
 import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.comcast.crm.basetest.BaseClass;
@@ -11,7 +12,7 @@ import com.comcast.crm.genericwebdriverutility.JavaUtility;
 import com.comcast.crm.objectrepositoryutility.CreatingNewOrganizationPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.OrganizationPage;
-
+@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateOrgWithPhoneTest extends BaseClass {
 	@Test ( groups= "regressionTest")
 	public static void createOrgWithPhoneTest() throws IOException {

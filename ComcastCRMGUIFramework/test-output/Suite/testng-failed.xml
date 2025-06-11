@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="OrgTestSuit(failed)">
+  <test thread-count="5" name="ContactTestSuit(failed)">
     <classes>
       <class name="com.comcast.crm.contacttest.CreateContactWithSupportDateTest">
         <methods>
+          <include name="configAfterClass"/>
           <include name="login"/>
           <include name="toCloseDB"/>
-          <include name="configAfterClass"/>
           <include name="configBeforeClass"/>
           <include name="createContactWithSupportDateTest"/>
           <include name="logout"/>
@@ -15,5 +15,5 @@
         </methods>
       </class> <!-- com.comcast.crm.contacttest.CreateContactWithSupportDateTest -->
     </classes>
-  </test> <!-- OrgTestSuit(failed) -->
+  </test> <!-- ContactTestSuit(failed) -->
 </suite> <!-- Failed suite [Suite] -->
