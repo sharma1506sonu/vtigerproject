@@ -14,6 +14,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.comcast.crm.generic.databaseutility.DataBaseUtility;
 import com.comcast.crm.generic.fileutility.FileUtility;
@@ -37,10 +38,11 @@ public class BaseClass {
 	System.out.println("=======Server connected DB successfully=====");
 	
 	}
-    
+    @Parameters("BROWSER")
 	@BeforeClass
-	public void configBeforeClass() throws IOException {
-		String BROWSER = fLib.getDataFromPropertiesFile("browser");
+	//public void configBeforeClass() throws IOException {
+    	public void configBeforeClass(String BROWSER) throws IOException {
+		//String BROWSER = fLib.getDataFromPropertiesFile("browser");
 		    
 		    if(BROWSER.equals("chrome")) {
 		    	driver=new ChromeDriver();
@@ -84,7 +86,7 @@ public class BaseClass {
 
 	@AfterClass
 	public void configAfterClass() throws SQLException {
-		driver.quit();
+    	driver.close();
 		System.out.println("Browser closed successfully");
 	}
 

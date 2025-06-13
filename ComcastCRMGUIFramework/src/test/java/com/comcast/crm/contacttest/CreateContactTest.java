@@ -11,12 +11,12 @@ import com.comcast.crm.genericwebdriverutility.JavaUtility;
 import com.comcast.crm.objectrepositoryutility.ContactPage;
 import com.comcast.crm.objectrepositoryutility.CreatingNewContactPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
-@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
+//@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateContactTest extends BaseClass {
 	@Test
 public static void createContactTest () throws IOException {
 
-
+System.out.println("createContactTest Strart");
 			ExcelUtility elib=new ExcelUtility();
 		    JavaUtility jlib=new JavaUtility();
 		    
@@ -40,6 +40,7 @@ public static void createContactTest () throws IOException {
 			 * " contact is created==PASS"); } else { System.out.println(LastName+
 			 * " contact is not created==FAIL"); }
 			 */
+		    System.out.println("createContactTest end");
 
 }
 }

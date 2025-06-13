@@ -8,15 +8,17 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.comcast.crm.basetest.BaseClass;
 import com.comcast.crm.generic.fileutility.ExcelUtility;
 
 import com.comcast.crm.genericwebdriverutility.JavaUtility;
+import com.comcast.crm.genericwebdriverutility.UtilityClassObject;
 import com.comcast.crm.objectrepositoryutility.CreatingNewOrganizationPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.OrganizationPage;
 
-@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
+//@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateOrgWithIndustryTest extends BaseClass {
 	@Test ( groups= "smokeTest")
 	public  void createOrgWithIndustryTest() throws IOException {
@@ -27,7 +29,7 @@ public class CreateOrgWithIndustryTest extends BaseClass {
 			    
 				
 				//read data from excel
-				
+			    UtilityClassObject.getTest().log(Status.INFO, "read data from excel");
 				String industryName=elib.getDataFromExcel("OrgData",4,3);
 				
 				String industryType=elib.getDataFromExcel("OrgData",4,4) ;
@@ -42,12 +44,13 @@ public class CreateOrgWithIndustryTest extends BaseClass {
 			    HomePage hp=new HomePage(sdriver);
 			    hp.getOrgLink().click();
 			    
-			    
+			    UtilityClassObject.getTest().log(Status.INFO, "create org started");
 			    OrganizationPage op=new OrganizationPage(sdriver);
 			    op.getCreateNewOrgBtn().click();
 			    
 			    
 			    // step-3: enter all the details and create new organization
+			  
 			    CreatingNewOrganizationPage cop=new CreatingNewOrganizationPage(sdriver);
 			    cop.createOrg(OrgName,industryName, industryType);;
 				  
@@ -67,6 +70,6 @@ public class CreateOrgWithIndustryTest extends BaseClass {
 		 * " information  is verified==PASS"); } else { System.out.println(industryType+
 		 * " information is not verified==FAIL"); }
 		 */
-	    
+
 	}
 }

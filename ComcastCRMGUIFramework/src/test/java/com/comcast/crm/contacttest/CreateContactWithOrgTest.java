@@ -14,9 +14,9 @@ import com.comcast.crm.objectrepositoryutility.CreatingNewContactPage;
 import com.comcast.crm.objectrepositoryutility.CreatingNewOrganizationPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.OrganizationPage;
-@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
+//@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateContactWithOrgTest extends BaseClass {
-	@Test
+	@Test( groups= "smokeTest")
 	public static void createContactWithOrgTest() throws IOException {
 		ExcelUtility elib = new ExcelUtility();
 		JavaUtility jlib = new JavaUtility();

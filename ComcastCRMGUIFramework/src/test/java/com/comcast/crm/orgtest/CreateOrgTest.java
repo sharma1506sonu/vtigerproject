@@ -19,7 +19,7 @@ import com.comcast.crm.objectrepositoryutility.OrganizationPage;
 @Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateOrgTest extends BaseClass {
 	
-	@Test( groups= "smokeTest")
+	@Test
 	public void createOrgTest() throws EncryptedDocumentException, IOException {
 	    ExcelUtility eLib=new ExcelUtility();
 	    JavaUtility jLib=new JavaUtility();
@@ -58,6 +58,7 @@ public class CreateOrgTest extends BaseClass {
 		 */
 	    // step-6: verify Header organization name into expected result
 	    String actualOrgName=oip.getVerifyOrg().getText();
+	    
 	    //String actualOrgName = sdriver.findElement(By.id("dtlview_Organization Name")).getText();
 	    Assert.assertEquals(true,actualOrgName.equals(OrgName));
 		/*
