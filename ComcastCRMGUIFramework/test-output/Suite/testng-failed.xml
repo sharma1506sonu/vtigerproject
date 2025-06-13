@@ -4,22 +4,6 @@
   <listeners>
     <listener class-name="com.comcast.crm.listenerutility.ListenerImplementationClass"/>
   </listeners>
-  <test thread-count="3" parallel="tests" name="Test Runner-Chrome(failed)">
-    <parameter name="BROWSER" value="chrome"/>
-    <classes>
-      <class name="com.comcast.crm.orgtest.CreateOrgWithPhoneTest">
-        <methods>
-          <include name="configAfterClass"/>
-          <include name="toCloseDB"/>
-          <include name="login"/>
-          <include name="configBeforeClass"/>
-          <include name="createOrgWithPhoneTest"/>
-          <include name="logout"/>
-          <include name="configBeforeSuite"/>
-        </methods>
-      </class> <!-- com.comcast.crm.orgtest.CreateOrgWithPhoneTest -->
-    </classes>
-  </test> <!-- Test Runner-Chrome(failed) -->
   <test thread-count="3" parallel="tests" name="Test Runner-Firefox(failed)">
     <parameter name="BROWSER" value="firefox"/>
     <classes>
@@ -36,20 +20,20 @@
       </class> <!-- com.comcast.crm.orgtest.CreateOrgTest -->
     </classes>
   </test> <!-- Test Runner-Firefox(failed) -->
-  <test thread-count="3" parallel="tests" name="Test Runner-Edge(failed)">
-    <parameter name="BROWSER" value="edge"/>
+  <test thread-count="3" parallel="tests" name="Test Runner-Chrome(failed)">
+    <parameter name="BROWSER" value="chrome"/>
     <classes>
-      <class name="com.comcast.crm.contacttest.CreateContactTest">
+      <class name="com.comcast.crm.orgtest.CreateOrgWithPhoneTest">
         <methods>
           <include name="configAfterClass"/>
           <include name="toCloseDB"/>
           <include name="login"/>
           <include name="configBeforeClass"/>
-          <include name="createContactTest"/>
-          <include name="configBeforeSuite"/>
+          <include name="createOrgWithPhoneTest"/>
           <include name="logout"/>
+          <include name="configBeforeSuite"/>
         </methods>
-      </class> <!-- com.comcast.crm.contacttest.CreateContactTest -->
+      </class> <!-- com.comcast.crm.orgtest.CreateOrgWithPhoneTest -->
     </classes>
-  </test> <!-- Test Runner-Edge(failed) -->
+  </test> <!-- Test Runner-Chrome(failed) -->
 </suite> <!-- Failed suite [suite] -->

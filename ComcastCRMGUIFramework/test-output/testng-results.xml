@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="9" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-13T14:48:37 IST" name="suite" finished-at="2025-06-13T14:50:09 IST" duration-ms="92225">
+  <suite started-at="2025-06-13T15:02:23 IST" name="suite" finished-at="2025-06-13T15:03:04 IST" duration-ms="41387">
     <groups>
       <group name="regressionTest">
         <method signature="CreateOrgWithPhoneTest.createOrgWithPhoneTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" name="createOrgWithPhoneTest" class="com.comcast.crm.orgtest.CreateOrgWithPhoneTest"/>
@@ -11,46 +11,38 @@
         <method signature="CreateContactWithOrgTest.createContactWithOrgTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithOrgTest@1033576a]" name="createContactWithOrgTest" class="com.comcast.crm.contacttest.CreateContactWithOrgTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2025-06-13T14:48:37 IST" name="Test Runner-Chrome" finished-at="2025-06-13T14:49:01 IST" duration-ms="24268">
-      <class name="com.comcast.crm.orgtest.CreateOrgWithPhoneTest">
-        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T14:48:37 IST" name="configBeforeClass" finished-at="2025-06-13T14:48:40 IST" duration-ms="2593" status="PASS">
+    <test started-at="2025-06-13T15:02:23 IST" name="Test Runner-Firefox" finished-at="2025-06-13T15:02:53 IST" duration-ms="30223">
+      <class name="com.comcast.crm.orgtest.CreateOrgTest">
+        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T15:02:23 IST" name="configBeforeClass" finished-at="2025-06-13T15:02:31 IST" duration-ms="8054" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBeforeClass -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T14:48:40 IST" name="login" finished-at="2025-06-13T14:48:48 IST" duration-ms="8091" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrgWithPhoneTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T14:48:48 IST" name="createOrgWithPhoneTest" finished-at="2025-06-13T14:48:57 IST" duration-ms="9354" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T15:02:31 IST" name="login" finished-at="2025-06-13T15:02:53 IST" duration-ms="22106" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[The element with the reference e5ec970b-e755-4752-933c-84dfc5b777f8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[Browsing context has been discarded
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d018ff31-1610-4811-8926-1017247892f4, clickElement {id=e5ec970b-e755-4752-933c-84dfc5b777f8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:45559, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20904, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45559/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (d018ff31-1610-4811-8926-1017247892f4)] -> link text: Organizations]
-Session ID: d018ff31-1610-4811-8926-1017247892f4]]>
+Command: [ee4d70da-ff2f-4c6d-a144-bee37c4ee38e, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:28737, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12524, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ee4d70da-ff2f-4c6d-a144-bee37c4ee38e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference e5ec970b-e755-4752-933c-84dfc5b777f8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d018ff31-1610-4811-8926-1017247892f4, clickElement {id=e5ec970b-e755-4752-933c-84dfc5b777f8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:45559, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20904, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45559/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (d018ff31-1610-4811-8926-1017247892f4)] -> link text: Organizations]
-Session ID: d018ff31-1610-4811-8926-1017247892f4
+Command: [ee4d70da-ff2f-4c6d-a144-bee37c4ee38e, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:28737, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12524, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ee4d70da-ff2f-4c6d-a144-bee37c4ee38e
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -61,11 +53,177 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.sendKeys(Unknown Source)
+at com.comcast.crm.objectrepositoryutility.LoginPage.loginToApp(LoginPage.java:56)
+at com.comcast.crm.basetest.BaseClass.login(BaseClass.java:76)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createOrgTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T15:02:53 IST" name="createOrgTest" finished-at="2025-06-13T15:02:53 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Browsing context has been discarded
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ee4d70da-ff2f-4c6d-a144-bee37c4ee38e, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:28737, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12524, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ee4d70da-ff2f-4c6d-a144-bee37c4ee38e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ee4d70da-ff2f-4c6d-a144-bee37c4ee38e, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:28737, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12524, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ee4d70da-ff2f-4c6d-a144-bee37c4ee38e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.sendKeys(Unknown Source)
+at com.comcast.crm.objectrepositoryutility.LoginPage.loginToApp(LoginPage.java:56)
+at com.comcast.crm.basetest.BaseClass.login(BaseClass.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T15:02:53 IST" name="logout" finished-at="2025-06-13T15:02:53 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T15:02:53 IST" name="configAfterClass" finished-at="2025-06-13T15:02:53 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterClass -->
+      </class> <!-- com.comcast.crm.orgtest.CreateOrgTest -->
+    </test> <!-- Test Runner-Firefox -->
+    <test started-at="2025-06-13T15:02:23 IST" name="Test Runner-Chrome" finished-at="2025-06-13T15:03:04 IST" duration-ms="41387">
+      <class name="com.comcast.crm.orgtest.CreateOrgWithPhoneTest">
+        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T15:02:23 IST" name="configBeforeClass" finished-at="2025-06-13T15:02:26 IST" duration-ms="2856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T15:02:26 IST" name="login" finished-at="2025-06-13T15:02:29 IST" duration-ms="3302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createOrgWithPhoneTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T15:02:29 IST" name="createOrgWithPhoneTest" finished-at="2025-06-13T15:02:52 IST" duration-ms="23137" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Given link text expression "Organizations" is invalid: JavaScriptError: [Exception... "Component returned failure code: 0x8007000e (NS_ERROR_OUT_OF_MEMORY) [nsIXPCComponents_Utils.evalInSandbox]"  nsresult: "0x8007000e (NS_ERROR_OUT_OF_MEMORY)"  location: "JS frame :: chrome://remote/content/marionette/evaluate.sys.mjs :: evaluate.sandbox/promise< :: line 127"  data: no]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ee4d70da-ff2f-4c6d-a144-bee37c4ee38e, findElement {using=link text, value=Organizations}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:28737, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12524, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ee4d70da-ff2f-4c6d-a144-bee37c4ee38e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Given link text expression "Organizations" is invalid: JavaScriptError: [Exception... "Component returned failure code: 0x8007000e (NS_ERROR_OUT_OF_MEMORY) [nsIXPCComponents_Utils.evalInSandbox]"  nsresult: "0x8007000e (NS_ERROR_OUT_OF_MEMORY)"  location: "JS frame :: chrome://remote/content/marionette/evaluate.sys.mjs :: evaluate.sandbox/promise< :: line 127"  data: no]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ee4d70da-ff2f-4c6d-a144-bee37c4ee38e, findElement {using=link text, value=Organizations}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:28737, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12524, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ee4d70da-ff2f-4c6d-a144-bee37c4ee38e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
 at com.comcast.crm.orgtest.CreateOrgWithPhoneTest.createOrgWithPhoneTest(CreateOrgWithPhoneTest.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -90,282 +248,33 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrgWithPhoneTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T14:48:57 IST" name="logout" finished-at="2025-06-13T14:49:01 IST" duration-ms="3267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T14:49:01 IST" name="configAfterClass" finished-at="2025-06-13T14:49:01 IST" duration-ms="661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterClass -->
-      </class> <!-- com.comcast.crm.orgtest.CreateOrgWithPhoneTest -->
-    </test> <!-- Test Runner-Chrome -->
-    <test started-at="2025-06-13T14:48:37 IST" name="Test Runner-Firefox" finished-at="2025-06-13T14:49:04 IST" duration-ms="27147">
-      <class name="com.comcast.crm.orgtest.CreateOrgTest">
-        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T14:48:37 IST" name="configBeforeClass" finished-at="2025-06-13T14:48:45 IST" duration-ms="7796" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeClass -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T14:48:45 IST" name="login" finished-at="2025-06-13T14:48:52 IST" duration-ms="6891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrgTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T14:48:52 IST" name="createOrgTest" finished-at="2025-06-13T14:48:57 IST" duration-ms="5349" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T15:02:53 IST" name="logout" finished-at="2025-06-13T15:03:04 IST" duration-ms="11485" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[The element with the reference e5ec970b-e755-4752-933c-84dfc5b777f8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=137.0.7151.104)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d018ff31-1610-4811-8926-1017247892f4, clickElement {id=e5ec970b-e755-4752-933c-84dfc5b777f8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:45559, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20904, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45559/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (d018ff31-1610-4811-8926-1017247892f4)] -> link text: Organizations]
-Session ID: d018ff31-1610-4811-8926-1017247892f4]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7906ff0e66c998f240270d082b7fec5d, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58182/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7906ff0e66c998f240270d082b7fec5d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference e5ec970b-e755-4752-933c-84dfc5b777f8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=137.0.7151.104)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d018ff31-1610-4811-8926-1017247892f4, clickElement {id=e5ec970b-e755-4752-933c-84dfc5b777f8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:45559, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20904, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45559/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (d018ff31-1610-4811-8926-1017247892f4)] -> link text: Organizations]
-Session ID: d018ff31-1610-4811-8926-1017247892f4
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at com.comcast.crm.orgtest.CreateOrgTest.createOrgTest(CreateOrgTest.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T14:48:57 IST" name="logout" finished-at="2025-06-13T14:49:03 IST" duration-ms="5684" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgTest@53fb3dab]" started-at="2025-06-13T14:49:03 IST" name="configAfterClass" finished-at="2025-06-13T14:49:04 IST" duration-ms="1274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterClass -->
-      </class> <!-- com.comcast.crm.orgtest.CreateOrgTest -->
-    </test> <!-- Test Runner-Firefox -->
-    <test started-at="2025-06-13T14:48:37 IST" name="Test Runner-Edge" finished-at="2025-06-13T14:50:09 IST" duration-ms="92221">
-      <class name="com.comcast.crm.contacttest.CreateContactWithSupportDateTest">
-        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithSupportDateTest@303cf2ba]" started-at="2025-06-13T14:49:50 IST" name="configBeforeClass" finished-at="2025-06-13T14:49:53 IST" duration-ms="3066" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeClass -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithSupportDateTest@303cf2ba]" started-at="2025-06-13T14:49:53 IST" name="login" finished-at="2025-06-13T14:49:54 IST" duration-ms="1281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createContactWithSupportDateTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithSupportDateTest@303cf2ba]" started-at="2025-06-13T14:49:54 IST" name="createContactWithSupportDateTest" finished-at="2025-06-13T14:50:05 IST" duration-ms="11169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithSupportDateTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithSupportDateTest@303cf2ba]" started-at="2025-06-13T14:50:05 IST" name="logout" finished-at="2025-06-13T14:50:09 IST" duration-ms="3884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithSupportDateTest@303cf2ba]" started-at="2025-06-13T14:50:09 IST" name="configAfterClass" finished-at="2025-06-13T14:50:09 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterClass -->
-      </class> <!-- com.comcast.crm.contacttest.CreateContactWithSupportDateTest -->
-      <class name="com.comcast.crm.contacttest.CreateContactWithOrgTest">
-        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithOrgTest@1033576a]" started-at="2025-06-13T14:49:23 IST" name="configBeforeClass" finished-at="2025-06-13T14:49:27 IST" duration-ms="3241" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeClass -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithOrgTest@1033576a]" started-at="2025-06-13T14:49:27 IST" name="login" finished-at="2025-06-13T14:49:28 IST" duration-ms="1361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createContactWithOrgTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithOrgTest@1033576a]" started-at="2025-06-13T14:49:28 IST" name="createContactWithOrgTest" finished-at="2025-06-13T14:49:48 IST" duration-ms="20371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithOrgTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithOrgTest@1033576a]" started-at="2025-06-13T14:49:48 IST" name="logout" finished-at="2025-06-13T14:49:50 IST" duration-ms="1248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.comcast.crm.contacttest.CreateContactWithOrgTest@1033576a]" started-at="2025-06-13T14:49:50 IST" name="configAfterClass" finished-at="2025-06-13T14:49:50 IST" duration-ms="130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterClass -->
-      </class> <!-- com.comcast.crm.contacttest.CreateContactWithOrgTest -->
-      <class name="com.comcast.crm.contacttest.CreateContactTest">
-        <test-method is-config="true" signature="configBeforeSuite()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@247310d0]" started-at="2025-06-13T14:48:37 IST" name="configBeforeSuite" finished-at="2025-06-13T14:48:37 IST" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeSuite -->
-        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@247310d0]" started-at="2025-06-13T14:48:37 IST" name="configBeforeClass" finished-at="2025-06-13T14:48:42 IST" duration-ms="5254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeClass -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@247310d0]" started-at="2025-06-13T14:48:42 IST" name="login" finished-at="2025-06-13T14:48:51 IST" duration-ms="8116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createContactTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@247310d0]" started-at="2025-06-13T14:48:51 IST" name="createContactTest" finished-at="2025-06-13T14:49:03 IST" duration-ms="12493" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[The element with the reference 72160d79-b9cf-4efe-85ab-d064ab6cfc23 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d018ff31-1610-4811-8926-1017247892f4, clickElement {id=72160d79-b9cf-4efe-85ab-d064ab6cfc23}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:45559, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20904, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45559/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (d018ff31-1610-4811-8926-1017247892f4)] -> xpath: //input[@title='Save [Alt+S]']]
-Session ID: d018ff31-1610-4811-8926-1017247892f4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference 72160d79-b9cf-4efe-85ab-d064ab6cfc23 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d018ff31-1610-4811-8926-1017247892f4, clickElement {id=72160d79-b9cf-4efe-85ab-d064ab6cfc23}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:debuggerAddress: 127.0.0.1:45559, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20904, moz:profile: C:\Users\vivek\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45559/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (d018ff31-1610-4811-8926-1017247892f4)] -> xpath: //input[@title='Save [Alt+S]']]
-Session ID: d018ff31-1610-4811-8926-1017247892f4
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at com.comcast.crm.objectrepositoryutility.CreatingNewContactPage.createNewContact(CreatingNewContactPage.java:70)
-at com.comcast.crm.contacttest.CreateContactTest.createContactTest(CreateContactTest.java:33)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@247310d0]" started-at="2025-06-13T14:49:03 IST" name="logout" finished-at="2025-06-13T14:49:23 IST" duration-ms="20257" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
-  (Session info: MicrosoftEdge=137.0.3296.68)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6bcc4306a732da4e7d7a5384aad6523d, findElement {using=link text, value=Sign Out}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.68, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57720}, msedge: {msedgedriverVersion: 137.0.3296.68 (f3affdcf267b..., userDataDir: C:\Users\vivek\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57720/devtoo..., se:cdpVersion: 137.0.3296.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6bcc4306a732da4e7d7a5384aad6523d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
-  (Session info: MicrosoftEdge=137.0.3296.68)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6bcc4306a732da4e7d7a5384aad6523d, findElement {using=link text, value=Sign Out}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.68, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57720}, msedge: {msedgedriverVersion: 137.0.3296.68 (f3affdcf267b..., userDataDir: C:\Users\vivek\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57720/devtoo..., se:cdpVersion: 137.0.3296.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6bcc4306a732da4e7d7a5384aad6523d
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7906ff0e66c998f240270d082b7fec5d, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58182/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7906ff0e66c998f240270d082b7fec5d
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -412,19 +321,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@247310d0]" started-at="2025-06-13T14:49:23 IST" name="configAfterClass" finished-at="2025-06-13T14:49:23 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.comcast.crm.orgtest.CreateOrgWithPhoneTest@8462f31]" started-at="2025-06-13T15:03:04 IST" name="configAfterClass" finished-at="2025-06-13T15:03:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAfterClass -->
-        <test-method is-config="true" signature="toCloseDB()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@247310d0]" started-at="2025-06-13T14:50:09 IST" name="toCloseDB" finished-at="2025-06-13T14:50:09 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toCloseDB -->
-      </class> <!-- com.comcast.crm.contacttest.CreateContactTest -->
-    </test> <!-- Test Runner-Edge -->
+      </class> <!-- com.comcast.crm.orgtest.CreateOrgWithPhoneTest -->
+    </test> <!-- Test Runner-Chrome -->
   </suite> <!-- suite -->
 </testng-results>

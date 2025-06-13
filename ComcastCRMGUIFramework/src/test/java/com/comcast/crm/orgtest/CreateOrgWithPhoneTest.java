@@ -12,7 +12,7 @@ import com.comcast.crm.genericwebdriverutility.JavaUtility;
 import com.comcast.crm.objectrepositoryutility.CreatingNewOrganizationPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.OrganizationPage;
-//@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
+@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateOrgWithPhoneTest extends BaseClass {
 	@Test ( groups= "regressionTest")
 	public static void createOrgWithPhoneTest() throws IOException {

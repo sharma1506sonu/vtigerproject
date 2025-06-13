@@ -11,7 +11,7 @@ import com.comcast.crm.genericwebdriverutility.JavaUtility;
 import com.comcast.crm.objectrepositoryutility.ContactPage;
 import com.comcast.crm.objectrepositoryutility.CreatingNewContactPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
-//@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
+@Listeners(com.comcast.crm.listenerutility.ListenerImplementationClass.class)
 public class CreateContactTest extends BaseClass {
 	@Test
 public static void createContactTest () throws IOException {
