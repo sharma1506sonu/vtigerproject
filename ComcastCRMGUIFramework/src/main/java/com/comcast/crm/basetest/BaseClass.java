@@ -38,11 +38,11 @@ public class BaseClass {
 	System.out.println("=======Server connected DB successfully=====");
 	
 	}
-    @Parameters("BROWSER")
+ //   @Parameters("BROWSER")
 	@BeforeClass
-	//public void configBeforeClass() throws IOException {
-    	public void configBeforeClass(String BROWSER) throws IOException {
-		//String BROWSER = fLib.getDataFromPropertiesFile("browser");
+	public void configBeforeClass() throws IOException {
+//    	public void configBeforeClass(String BROWSER) throws IOException {
+		String BROWSER = fLib.getDataFromPropertiesFile("browser");
 		    
 		    if(BROWSER.equals("chrome")) {
 		    	driver=new ChromeDriver();
