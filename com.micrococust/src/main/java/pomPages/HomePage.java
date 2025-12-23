@@ -16,7 +16,7 @@ public class HomePage {
 
     public void openLoginPopup() throws InterruptedException {
         driver.findElement(loginHeader).click();
-        Thread.sleep(2000);
+     
         driver.findElement(customerLogin).click();
     }
 }

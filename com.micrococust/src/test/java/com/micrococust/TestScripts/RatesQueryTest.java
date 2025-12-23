@@ -18,10 +18,7 @@ public class RatesQueryTest extends BaseClass {
         login.login("devops5@aaa2innovate.com", "@cupcake3#");
 
         AirQuerryPage airQuery = new AirQuerryPage(driver);
-        airQuery.submitAirQuery(
-                "DEL", "DXB", "100", "5",
-                "25-12-2025", "Electronics"
-        );
+        airQuery.submitAirQuery();
 
         RatesQueryPreviewPage rates = new RatesQueryPreviewPage(driver);
         Assert.assertTrue(rates.isRatesDisplayed(), "Rates not displayed");

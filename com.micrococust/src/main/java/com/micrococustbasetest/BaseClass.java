@@ -2,6 +2,7 @@ package com.micrococustbasetest;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 
 import java.time.Duration;
@@ -12,7 +13,10 @@ public class BaseClass {
 
     @BeforeMethod
     public void setup() {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+
+        driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get("https://micrococust.zipaworld.com/");
@@ -20,6 +24,7 @@ public class BaseClass {
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+     //   driver.quit();
+    	System.out.println("Script stuck");
     }
 }

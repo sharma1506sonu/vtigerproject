@@ -23,7 +23,7 @@ public class LoginPage extends WebDriverUtility{
 	@FindBy(name="user_password")
 	private WebElement passwordEdt;
 	
-	@FindAll({@FindBy(id="submitButton"), @FindBy(xpath = "//input[@value='login']")})
+	@FindAll({@FindBy(id="submitButton"),	@FindBy(xpath = "//input[@value='login']")})
 	private WebElement loginBtn;
 	
 	
